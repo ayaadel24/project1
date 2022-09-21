@@ -1,0 +1,443 @@
+@import "global";
+@mixin flexcenter {
+  display: flex;
+  align-self: center;
+  align-content: center;
+}
+
+/* Start Register */
+.section-register
+{
+ height: 100%;
+ width: 100%;
+display: flex;
+align-items: center;
+overflow: hidden;
+background-color: var(--dark-color);
+.content
+{
+background-color: var(--primary-color);
+width: 40%;
+height: 200%;
+border-radius: 0px 20px 20px 0px ;
+overflow: hidden;
+@include flexcenter();
+justify-content: center;
+flex-direction: column;
+h1
+{
+  color:var(--semi-light);
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: -30px;
+  font-size:25px;
+}
+}
+.form
+{
+  @include flexcenter();
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+  width: 60%;
+  h2
+  {
+   font-size:30px;
+   margin-right: 300px;
+   text-transform: capitalize;
+   font-weight: 600;
+   color:#1e2944
+  }
+  .form-row input
+  {
+background-color: transparent;
+border: 1px solid var(--secondry-color);
+border-radius: 10px;
+  }
+.input-group
+  {
+ margin-top: 20px;
+ input
+ {
+ border-radius:  0px 10px 10px 0px;
+ padding: 20px 20px;
+ background-color: transparent;
+ border: 1px solid var(--secondry-color);
+ }
+ span
+ {
+  background-color:transparent;
+  color: var(--secondry-color);
+  border: 1px solid var(--secondry-color);
+  border-radius: 10px 0px 0px 10px;
+ }
+  }
+  .form-group input
+  {
+border-radius: 20px;
+padding: 20px 20px;
+margin-top: 20px;
+background-color: transparent;
+border: 1px solid var(--secondry-color);
+  }
+.custom-select
+  {
+  border-radius: 10px;
+ padding-left: 20px;
+ padding-top: -20px;
+ margin-top: 20px;
+ background-color: transparent;
+ border: 1px solid var(--secondry-color);
+ option
+ {
+ color: #7F8487;
+ }
+  }
+  button
+  {
+  text-transform: capitalize;
+  background-color: #947ABE;
+  color: #ffffff;
+  border-radius: 10px;
+  }
+  h3
+  {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondry-color);
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 0px
+  }
+  .links
+  {
+    @include flexcenter();
+  justify-content: space-between;
+  .link1
+{
+  border: 1px solid var(--secondry-color);
+  padding: 5px 5px;
+  border-radius: 10px;
+  margin-inline-end: 5px;
+  img
+{
+  width:30px;
+}
+span
+{
+  font-size: 15px;
+  color: var(--secondry-color);
+  text-transform: capitalize;
+  font-weight: 700;
+}
+}
+
+  }
+  .heading
+  {
+    @include flexcenter();
+  justify-content: center;
+  padding: 10px 10px;
+  h4
+  {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    color: #7F8487;
+  }
+  a h5
+  {
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color:#1e2944;
+    margin-left: 5px;
+   
+}
+  }
+}
+}
+/* End  Register */
+
+
+/* Start Login , pass */
+.section-login
+{
+ height: 100%;
+ width: 100%;
+display: flex;
+align-items: center;
+overflow: hidden;
+background-color:var(--dark-color);
+.content
+{
+background-color: var(--primary-color);
+width: 40%;
+height: 200%;
+border-radius: 0px 20px 20px 0px ;
+justify-content: center;
+@include flexcenter();
+flex-direction: column;
+h1
+{
+  color:var(--semi-light);
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: -30px;
+  font-size:25px;
+ 
+}
+h2
+{
+  color:var(--semi-light);
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: -10px;
+  font-size:25px;
+ 
+}
+}
+.login 
+{
+  @include flexcenter();
+flex-direction: column;
+width: 60%;
+h2
+{
+text-transform: capitalize;
+color: #1e2944;
+font-weight: 600;
+padding: 40px 0px;
+}
+.input-group input
+{
+border-radius:  0px 10px 10px 0px;
+padding: 20px 20px;
+width: 350px;
+background-color: transparent;
+border: 1px solid var(--secondry-color);
+}
+.input-group span
+{
+  background-color:transparent;
+  color: var(--secondry-color);
+  background-color: transparent;
+border: 1px solid var(--secondry-color);
+border-radius: 10px 0px 0px 10px;
+}
+.form-group input
+{
+border-radius: 10px;
+padding: 20px 20px;
+margin-top: 30px;
+background-color: transparent;
+border: 1px solid var(--secondry-color);
+}
+h3
+{
+  font-size: 13px;
+  color: var(--secondry-color);
+  font-weight: 600;
+   text-transform: capitalize;
+  float: right;
+}
+button
+{
+  text-transform: capitalize;
+  background-color: #947ABE;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+h4
+{
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondry-color);
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+ p
+{
+  margin-left: -200px;
+  width: 200px;
+  color:var(--secondry-color);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0px ;
+}
+.links
+{
+  @include flexcenter();
+  justify-content: space-between;
+
+
+.link1
+{
+  border: 1px solid var(--secondry-color);
+  padding: 5px 5px;
+  border-radius: 10px;
+  margin-inline-end: 5px;
+  img
+{
+  width:30px;
+}
+span
+{
+  font-size: 15px;
+  color: var(--secondry-color);
+  text-transform: capitalize;
+  font-weight: 700;
+}
+}
+}
+.heading
+{
+  @include flexcenter();
+  justify-content: center;
+  padding: 10px 10px;
+  h4
+{
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  color: #7F8487;
+}
+a h5
+{
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color:#1e2944;
+  margin-left: 5px;
+  
+}
+}
+.back
+{
+  @include flexcenter();
+  justify-content: center;
+  padding: 40px 0px;
+  img
+{
+  width: 25px;
+  object-position: center;
+  margin-inline-end: 5px;
+}
+span
+{
+  font-size: 17px;
+  color: #1e2944;
+  
+}
+}
+}
+
+}
+/* eng login , pass */
+
+
+/* Start code */
+.section-login .login h6
+{
+  margin-left: -150px;
+  color:#1e2944;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 0px ;
+}
+.section-login .login2 
+{
+flex-direction: column;
+@include flexcenter();
+width: 60%;
+.js-timer
+{
+  padding: 20px 0px 0px 0px;
+  color: #7F8487;
+  font-size: 14px;
+}
+h6
+{
+  
+  text-align: center;
+  color:#1e2944;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 0px ;
+}
+
+}
+.form-control::-webkit-outer-spin-button,
+.form-control::-webkit-inner-spin-button
+{
+  -webkit-appearance: none;
+   margin: 0;
+}  
+.section-login .login2 .form-row .form-group
+{
+  @include flexcenter();
+ justify-content: center ;
+ margin: auto;
+ input
+{
+  margin-inline-end: 20px;
+  background-color: transparent;
+  border: 2px solid var(--secondry-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  color:#1e2944
+}
+
+}
+.section-login .heading2
+{
+  @include flexcenter();
+  justify-content: center;
+  padding:10px 0px 0px 0px;
+  h4
+  {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    color: #7F8487;
+    padding: 20px 0px;
+    
+  }
+  a h5
+{
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color:#1e2944;
+  margin-left: 5px;
+  
+}
+}
+.section-login .back2
+{
+  @include flexcenter();
+  justify-content: center;
+  img
+{
+  width: 25px;
+  object-position: center;
+  margin-inline-end: 5px;
+}
+span
+{
+  font-size: 17px;
+  color: #1e2944;
+  
+}
+}
+// end code 
